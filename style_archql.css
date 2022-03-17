@@ -1,315 +1,168 @@
 /* Artem (archql) Drankevich part */
 
-/* Global font setup */
-* {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 500;
-
-	padding: 0;
-	margin: 0;
+.archql_top_menu_li {
+	display: inline;
+	float: right;
+}
+.archql_top_menu_a {
+	display: block;
+	padding: 8px;
 }
 
-/* Top menu */
-.aq_top_container {
-	display: flex;
-	align-items: center;
-	height: 80px;
-}
-.aq_top_container header {
-	width: 1170px;
-	margin: 0 auto;
-	height: 80px;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.aq_top_nav {
-	display: flex;
-
-	font-weight: 600;
-	font-size: 20px;
-}
-.aq_top_nav ul {
+.aq_top_ul {
 	list-style-type: none;
-	display: flex;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
+
+	padding: 1%;
 }
+
 .aq_top_li {
-	margin: 0 40px 0 0;
+	float: right;
 }
-.aq_top_li a {
+
+* {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+}
+
+.aq_top_ul a {
 	display: block;
 	color: black;
 	text-align: center;
+	padding: 14px 16px;
 	text-decoration: none;
 
 	font-size: 20px;
-	font-weight: 600;
-
-	transition: color 0.2s;
-}
-.aq_top_li a:hover {
-	color: #00897b;
 }
 
-.aq_top_logo{
+.aq_top_li:first-child{
 	float: left;
 }
-.aq_top_logo span{
+
+.aq_top_li:first-child a{
 	font-size: 25px;
 	font-weight: 600;
 }
 
-.aq_top_nav ul i {
-	display: flex;
-	width: 20px;
-	height: 20px;
-}
-
 /* Container needed to position the button. Adjust the width as needed */
-.aq_greeting_container {
+.aq_container {
 	/*width: 100%;
 	height: 100%;*/
-	color: white;
 
-	background-image: url("src/topfone.png");
+	background-image: url("src/fone.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position-x: 50%;
-	background-position-y: 50%;
 
-	position: relative;
-	height: 100vh;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 
-	min-width: 1280px;
+	padding: 5%;
 }
 
 /* Style the button and place it in the middle of the container/image */
-.aq_greeting_container h1 {
+.aq_container h1 {
+	color: white;
 	text-align: center;
 	
 	font-size: 60px;
 	font-weight: 700;
-
-	margin-bottom: 50px;
 }
-.aq_greeting_container h2 {
+.aq_container h2 {
+	color: white;
 	text-align: center;
 
 	font-size: 22px;
 	font-weight: 300;
-
-	margin-bottom: 150px;
 }
-.aq_greeting_container nav {
+.aq_container nav {
+	align: center;
 	justify-content: center;
 	align-items: center;
 
 	display: flex;
 }
-.aq_greeting_container button {
+.aq_container button {
 	background-color: rgba(0.0, 0.0, 0.0, 0.0);
 	color: white;
 	
 	font-size: 20px;
-	font-family: Roboto, sans-serif;
 	text-transform: uppercase;
 
-	border: 3px white solid;
-	width: 220px;
-	height: 70px;
-	margin: 0 12px;
+	border: 5px white solid;
 
-	padding: 15px;
-	text-align: center;
-	min-width: 220px;
-
-	cursor: pointer;
-	transition: background 0.2s/*, border 0.7s*/;
+	margin: 10px;
+	padding: 20px;
 }
-.aq_greeting_container button:hover {
+
+.aq_container button:hover {
 	background-color: #00897b;
 	border-color: #00897b;
-}
-.aq_greeting_container i {
-	margin-top: 100px;
-	cursor: pointer;
-
-	font-size: 25px;
 }
 
 /* About */
 
-.aq_about_container {
+.aq_about {
 	display: flex;
 	flex-direction: column;
-
-	width: 1170px;
-	margin: 0 auto;
-}
-.aq_about_container > div {
-	text-align: center;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	min-height: 346px;
-	min-width: 630px;
+
+	padding: 5%;
 }
-.aq_about_container > div h2 {
-	font-weight: 700;
+.aq_about h2 {
+	text-align: center;
+
 	font-size: 30px;
-	margin-bottom: 35px;
-	text-transform: capitalize;
+	font-weight: 600;
 }
-.aq_about_container > div p {
+.aq_about span {
 	font-size: 15px;
-	font-weight: 400;
-	width: 630px;
+	text-align: center;
 }
 
 /* Icons */
 
-.aq_about_container ul {
+.aq_icons_a {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
 
 	list-style-type: none;
-
-	margin: 0 60px 120px 60px;
 }
-.aq_about_container img {
-	width: 70px;
-	height: 70px;
-}
-.aq_about_container li {
+.aq_icons_a li {
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: column;
-	text-align: center;
 	align-items: center;
-	width: 264px;
+
+	padding: 5% 10%;
 }
-.aq_about_container div {
+.aq_icons_a div {
 	text-align: center;
 	font-size: 15px;
 }
-.aq_about_container h3 {
+.aq_icons_a h2 {
 	font-size: 20px;
-	font-weight: 600;
-	margin: 40px 0 20px 0;
 }
 
 /* Table */
-.aq_table_container {
+.aq_table {
 	background-color: #e4fdf9;
 }
-.aq_table_container > div {
-	width: 1170px;
-	margin: 0 auto;
-}
-.aq_table_container caption > div {
-
-	display: flex;
-	text-align: center;
-	flex-direction: column;
-
-	justify-content: center;
-	align-items: center;
-
-	min-height: 346px;
-	min-width: 630px;
-}
-.aq_table_container caption > div h2 {
-	font-weight: 700;
-	font-size: 30px;
-	margin: 0 0 35px 0;
-	text-transform: capitalize;
-}
-.aq_table_container caption > div span {
-	font-size: 15px;
-	font-weight: 400;
-	width: 630px;
+.aq_table table {
+	border-spacing: 30px;
 }
 
-.aq_table_container tr {
-	display: flex;
-	margin-bottom: 30px;
-}
-.aq_table_container th {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-	height: 438px;
-	width: 370px;
-	background: #fff;
-	margin: 0 15px;
-	transition: all ease 0.3s;
-}
-.aq_table_container th:first-child {
-	margin-left: 0;
-}
-.aq_table_container th:last-child {
-	margin-right: 0;
-}
-.aq_table_container th:hover {
-	color: #fff;
-	background: #00897b;
-	box-shadow: 10px 0 20px 0 rgb(0 0 0 / 35%);
+.aq_table th {
+	background-color: white;
+	padding: 50px;
 }
 
-
-.aq_table_container th h3 {
-	font-weight: 600;
-	font-size: 20px;
-	margin-bottom: 20px;
-}
-.aq_table_container th span {
-	letter-spacing: 0.05em;
-	font-size: 15px;
-	line-height: 25px;
-	text-align: center;
-	margin: 0 50px 40px 50px;
-}
-.aq_table_button {
-	/*background-color: white;*/
+.aq_table button {
+	background-color: white;
+	padding: 5px;
 
 	text-transform: uppercase;
 	font-size: 20px;
-	padding: 10px 5px;
-	border: solid 2px #000;
-	cursor: pointer;
-
-	background: #fff;
-
-	transition: all ease 0.3s;
-}
-.aq_table_container th:hover .aq_table_button {
-	border: solid 2px #fff;
-	background: #00897b;
-	color: #fff;
-}
-
-.aq_table_icon {
-	width: 70px;
-	height: 70px;
-	margin-bottom: 40px;
-	background: url("src/smartphone.svg") no-repeat;
-}
-.aq_table_container th:hover .aq_table_icon {
-	background: url("src/smartphone-white.svg") no-repeat;
 }
