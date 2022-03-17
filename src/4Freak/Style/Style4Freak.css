@@ -1,0 +1,77 @@
+.Contact
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.Contact
+{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(../Picture/BG.jpg);
+	background-size: cover;
+}
+
+.Contact .ContactContent
+{
+	max-width: 500px;
+	text-align: center;
+}
+
+.Contact .ContactContent h2
+{
+	font-size: 29px;
+	font-weight: 500;
+	color: #FFF;
+}
+
+.Contact .ContactContent  p
+{
+	margin-top: 30px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #FFF;
+}
+
+.ContactContainer .ContactInfo
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.ContactContainer .ContactInfo .ContactBox
+{
+	position: relative;
+	padding: 0 20%;
+	display: flex;
+}
+
+.ContactContainer .ContactInfo .ContactBox .ContactIcon
+{
+	min-width: 60px;
+	height: 60px;
+	background: RGB(57, 73, 171);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+
+.ContactContainer .ContactInfo .ContactBox p
+{
+	display: flex;
+	margin-top: 80px;
+	font-size: 16px;
+	color: #FFF;
+}
