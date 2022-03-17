@@ -1,13 +1,16 @@
-
 <!DOCKTYPE html>
 <html lang="en">
 	<head>
+		<link href="style.css" rel="stylesheet" type="text/css"> 
+		<link href="style_archql.css" rel="stylesheet" type="text/css"> 
+		
 		<!-- Fontawesome -->
 		<script src="https://use.fontawesome.com/c001d46bfb.js"></script>
 		<link rel="stylesheet" href="Fontawesome/css/font-awesome.min.css">
 		
 		<!-- 4Freak CSS -->
 		<link href = "src/4Freak/Style/Style4Freak.css" rel = "stylesheet" type = "text/css">	
+		
 		<!-- Others CSS -->
 		<link href = "style_archql.css" 				rel="stylesheet" type="text/css"> 
 		<link href = "styleKJI0YH.css" 					rel="stylesheet" type="text/css"> 
@@ -178,27 +181,29 @@
 				Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod temport 
 				incididunt ut labore et dolore magna aliqua. Ut enim as minim veniam,
 			</div>
-
+			
 			<!-- horizontal buttons -->
-			<div align="center">
-				<button>All</button>
-				<button>Web Design</button>
-				<button>UI/UX Design</button>
-				<button>Mockups</button>
+			<div align="center" class="btn-group-lw" >
+				<p>
+					<button>All</button>
+					<button>Web Design</button>
+					<button>UI/UX Design</button>
+					<button>Mockups</button>
+				</p>
 			</div>
-
+			
 			<!-- images part -->
 			<div align="center">
-				<img src="src/KJI0YH/img1.png" alt="ERROR READ" width="240" height="240">
-				<img src="src/KJI0YH/img2.png" alt="ERROR READ" width="240" height="240">
-				<img src="src/KJI0YH/img3.png" alt="ERROR READ" width="240" height="240">
+				<img src="src/img1.png" alt="ERROR READ" width="240" height="240">
+				<img src="src/img2.png" alt="ERROR READ" width="240" height="240">
+				<img src="src/img3.png" alt="ERROR READ" width="240" height="240">
 			</div>
 			<div align="center">
-				<img src="src/KJI0YH/img4.png" alt="ERROR READ" width="240" height="240">
-				<img src="src/KJI0YH/img5.png" alt="ERROR READ" width="240" height="240">
-				<img src="src/KJI0YH/img6.png" alt="ERROR READ" width="240" height="240">
+				<img src="src/img4.png" alt="ERROR READ" width="240" height="240">
+				<img src="src/img5.png" alt="ERROR READ" width="240" height="240">
+				<img src="src/img6.png" alt="ERROR READ" width="240" height="240">
 			</div>
-
+			
 			<!-- View all button -->
 			<div align="center">
 				<button>View all</button>
@@ -212,42 +217,49 @@
 				Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod temport 
 				incididunt ut labore et dolore magna aliqua. Ut enim as minim veniam,
 			</div>
-
-			<div>
+			
+			<div class="container">
 				<div class="price-row">
 					<div class="price-col">
-					<div class="back">
-						<h2 class="head">Free trial</h2>
-						<h3><sup>$</sup>00 <span>per month</span></h3>
-					</div>
-						<p>30 Free Trail</p>
-						<p>5 Free Projects</p>
-						<p>PHP 5 Enabled</p>
-						<p>24/7 Suports</p>
-						<button>Order Now</button>
-					</div>
-					<div class="price-col">
-						<h2 class="head">Basic</h2>
-						<h3><sup>$</sup>50 <span>per month</span></h3>
-						<p>30 Free Trail</p>
-						<p>5 Free Projects</p>
-						<p>PHP 5 Enabled</p>
-						<p>24/7 Suports</p>
-						<button>Order Now</button>
+						<p>Free trial</p>
+						<h3>$00 per month</h3>
+						<ul>
+							<li>30 Free Trail</li><hr>
+							<li>5 Free Projects</li><hr>
+							<li>PHP 5 Enabled</li><hr>
+							<li>24/7 Suports</li><hr>
+						</ul>
+						<button>ORDER NOW</button>
 					</div>
 					<div class="price-col">
-						<h2 class="head">Ultimates</h2>
-						<h3><sup>$</sup>99 <span>per month</span></h3>
-						<p>30 Free Trail</p>
-						<p>5 Free Projects</p>
-						<p>PHP 5 Enabled</p>
-						<p>24/7 Suports</p>
-						<button>Order Now</button>
+						<p>Basic</p>
+						<h3>$50 per month</h3>
+						<ul>
+							<li>30 Free Trail</li><hr>
+							<li>5 Free Projects</li><hr>
+							<li>PHP 5 Enabled</li><hr>
+							<li>24/7 Suports</li><hr>
+						</ul>
+						<button>ORDER NOW</button>
+					</div>
+					<div class="price-col">
+						<p>Ultimates</p>
+						<h3>$99 per month</h3>
+						<ul>
+							<li>30 Free Trail</li><hr>
+							<li>5 Free Projects</li><hr>
+							<li>PHP 5 Enabled</li><hr>
+							<li>24/7 Suports</li><hr>
+						</ul>
+						<button>ORDER NOW</button>
 					</div>
 				</div>
-			</div>	
+			</div>
+		
 		</div>
-			
+		
+		
+		
 		<!-- Pasha (4Freak) Bobryk part -->
 		
 		<!-- Contact us -->
@@ -284,26 +296,26 @@
 					<form>
 					
 						<!-- Edit Your Name -->
-						<div class = "ContactInputBox">
+						<div class = "ContactInputBox ContactInlineBox ContactNameBox">
 							<input type = "text" name = "" required = "required">
 							<span>Your NAME</span>
 						</div>
 						
 						<!-- Edit Your Email -->
-						<div class = "ContactInputBox">
+						<div class = "ContactInputBox ContactInlineBox ContactEmailBox">
 							<input type = "text" name = "" required = "required">
 							<span>Your Email</span>
 						</div>
 						
 						<!-- Edit Messages -->
-						<div class = "ContactInputBox">
+						<div class = "ContactInputBox ContactMessageBox">
 							<textarea required = "required"></textarea>
 							<span>Write Message</span>
 						</div>
 						
 						<!-- Button Send -->
 						<div class = "ContactInputBox">
-							<input required="submit" name = "" value = "Send">
+							<input type="submit" name = "" value = "Send">
 						</div>
 					</form>
 				</div>
@@ -312,5 +324,6 @@
 		
 		<!-- Andrey (Veon2479) Shuliak part -->
 		
+	
 	</body>
 </html>
