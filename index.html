@@ -1,5 +1,5 @@
 <!DOCKTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<link href="style.css" rel="stylesheet" type="text/css"> 
 		<link href="style_archql.css" rel="stylesheet" type="text/css"> 
@@ -9,25 +9,41 @@
 		<link rel="stylesheet" href="Fontawesome/css/font-awesome.min.css">
 		
 		<!-- 4Freak CSS -->
-		<link rel = "stylesheet" type = "text/css" href = "src/4Freak/Style/Style4Freak.css">		
+		<link href = "src/4Freak/Style/Style4Freak.css" rel = "stylesheet" type = "text/css">	
+		
+		<!-- Others CSS -->
+		<link href = "style_archql.css" 				rel="stylesheet" type="text/css"> 
+		<link href = "styleKJI0YH.css" 					rel="stylesheet" type="text/css"> 
+    	<link href = "style.css"                rel="stylesheet" type="text/css">
+		<!-- Other meta info -->
+		<title>Web Development Project</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<!-- Artem (archql) Drankevich part -->
-		<!-- Menu at the top of page -->
-		<div>
-			<ul class="aq_top_ul">
-				<li class="aq_top_li"><a href="index.html">Your logo</a></li>
-				<li class="aq_top_li"><a href="index.html">Home</a></li>
-				<li class="aq_top_li"><a href="index.html">About</a></li>
-				<li class="aq_top_li"><a href="index.html">Servicing</a></li>
-				<li class="aq_top_li"><a href="index.html">Portfolio</a></li>
-				<li class="aq_top_li"><a href="index.html">Blog</a></li>
-				<li class="aq_top_li"><a href="index.html">Contact us</a></li>
-			</ul>
-		<div>
+		<!-- Menu at the top of pagee -->
+		<div class="aq_top_container">
+			<header>
+				<div class="aq_top_logo">
+					<span>Your Logo</span>
+				</div>
+				<nav class="aq_top_nav">
+					<ul>
+						<li class="aq_top_li"><a href="#">Home</a></li>
+						<li class="aq_top_li"><a href="#">About</a></li>
+						<li class="aq_top_li"><a href="#">Servicing</a></li>
+						<li class="aq_top_li"><a href="#">Portfolio</a></li>
+						<li class="aq_top_li"><a href="#">Blog</a></li>
+						<li class="aq_top_li"><a href="#">Contact us</a></li>
+					</ul>
+					<i class="fa fa-search aq_top_icon_search" aria-hidden="true"></i>
+				</nav>
+			</header>
+		</div>
 		
 		<!-- Text with buttons on image below them -->
-		<div class="aq_container">
+		<div class="aq_greeting_container">
 			<!-- <img src="src/fone.jpg" alt="ERROR READ"> -->
 			<h1>Web development project</h1>
 			<h2>Very suitable for support all web development projects</h2>
@@ -35,143 +51,125 @@
 				<button>Our services</button>
 				<button>Hire is now</button>
 			</nav>
+			<i class="fa fa-chevron-down" aria-hidden="true"></i>
 		</div>
 		
 		<!-- About uss -->
-		<div class="aq_about">
-			<h2>About us</h2>
-			<span>
-			Lorem ipsum dolor sit amet,
-			consectetur adipiscing elit,
-			sed do eiusmod tempor incididunt
-			ut labore et dolore magna aliqua.
-			</span>
-		</div>
-		
-		<!-- 3 icons in a row with text -->
-		<ul class="aq_icons_a">
-			<li>
-				<img src="src/image.png" alt="ERROR READ" width="50" height="50">
-				<h3>Awesome icons</h3>
-				<div>
-					Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit,
-					sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua.
-				</div>
-			</li>
-			<li>
-				<img src="src/image.png" alt="ERROR READ" width="50" height="50">
-				<h3>One Page</h3>
-				<div>
-					Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit,
-					sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua.
-				</div>
-			</li>
-			<li>
-				<img src="src/image.png" alt="ERROR READ" width="50" height="50">
-				<h3>Fully Responsive</h3>
-				<div>
-					Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit,
-					sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua.
-				</div>
-			</li>
-		</ul>
-		
-		<!-- this strange table -->
-		<div class="aq_table">
-			<table>
-				<caption>
-					<h2> Our Services</h2>
+		<div class="aq_about_container">
+			<div>
+				<h2>About us</h2>
+				<p>
+				Lorem ipsum dolor sit amet,
+				consectetur adipiscing elit,
+				sed do eiusmod tempor incididunt
+				ut labore et dolore magna aliqua.
+				</p>
+			</div>
+			<!-- 3 icons in a row with text -->
+			<ul>
+				<li>
+					<img src="src/earth-globe.svg" alt="ERROR READ" width="50" height="50">
+					<h3>Awesome icons</h3>
 					<div>
 						Lorem ipsum dolor sit amet,
 						consectetur adipiscing elit,
-						sed do eiusmod tempor incididunt
-						ut labore et dolore magna aliqua.
+						sed do eiusmod tempor
 					</div>
-				</caption>
-				<tr>
-					<th>
-						<img src="src/image.png" alt="ERROR READ" width="50" height="50">
-						<h3>One Page</h3>
+				</li>
+				<li>
+					<img src="src/transfer.svg" alt="ERROR READ" width="50" height="50">
+					<h3>One Page</h3>
+					<div>
+						Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit,
+						sed do eiusmod tempor
+					</div>
+				</li>
+				<li>
+					<img src="src/head.svg" alt="ERROR READ" width="50" height="50">
+					<h3>Fully Responsive</h3>
+					<div>
+						Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit,
+						sed do eiusmod tempor
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- this strange table -->
+		<div class="aq_table_container">
+			<div>
+				<table>
+					<caption>
 						<div>
-							Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit,
-							sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua.
+							<h2> Our Services</h2>
+							<span>
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+							</span>
 						</div>
-						<button>Read more</button>
-						<p></p>
-					</th>
-					<th>
-						<img src="src/image.png" alt="ERROR READ" width="50" height="50">
-						<h3>One Page</h3>
-						<div>
-							Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit,
-							sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua.
-						</div>
-						<button>Read more</button>
-						<p></p>
-					</th>
-					<th>
-						<img src="src/image.png" alt="ERROR READ" width="50" height="50">
-						<h3>One Page</h3>
-						<div>
-							Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit,
-							sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua.
-						</div>
-						<button>Read more</button>
-						<p></p>
-					</th>
-				</tr>
-				<tr>
-					<th>
-						<img src="src/image.png" alt="ERROR READ" width="50" height="50">
-						<h3>One Page</h3>
-						<div>
-							Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit,
-							sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua.
-						</div>
-						<button>Read more</button>
-						<p></p>
-					</th>
-					<th>
-						<img src="src/image.png" alt="ERROR READ" width="50" height="50">
-						<h3>One Page</h3>
-						<div>
-							Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit,
-							sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua.
-						</div>
-						<button>Read more</button>
-						<p></p>
-					</th>
-					<th>
-						<img src="src/image.png" alt="ERROR READ" width="50" height="50">
-						<h3>One Page</h3>
-						<div>
-							Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit,
-							sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua.
-						</div>
-						<button>Read more</button>
-						<p></p>
-					</th>
-				</tr>
-			
-			</table>
+					</caption>
+					<tr>
+						<th>
+							<div class="aq_table_icon"></div>
+							<h3>One Page</h3>
+							<span>
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+							</span>
+							<button class="aq_table_button">Read more</button>
+							<p></p>
+						</th>
+						<th>
+							<div class="aq_table_icon"></div>
+							<h3>One Page</h3>
+							<span>
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+							</span>
+							<button class="aq_table_button">Read more</button>
+							<p></p>
+						</th>
+						<th>
+							<div class="aq_table_icon"></div>
+							<h3>One Page</h3>
+							<span>
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+							</span>
+							<button class="aq_table_button">Read more</button>
+							<p></p>
+						</th>
+					</tr>
+					<tr>
+						<th>
+							<div class="aq_table_icon"></div>
+							<h3>One Page</h3>
+							<span>
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+							</span>
+							<button class="aq_table_button">Read more</button>
+							<p></p>
+						</th>
+						<th>
+							<div class="aq_table_icon"></div>
+							<h3>One Page</h3>
+							<span>
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+							</span>
+							<button class="aq_table_button">Read more</button>
+							<p></p>
+						</th>
+						<th>
+							<div class="aq_table_icon"></div>
+							<h3>One Page</h3>
+							<span>
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+							</span>
+							<button class="aq_table_button">Read more</button>
+							<p></p>
+						</th>
+					</tr>
+
+				</table>
+			</div>
 		</div>
 		
 		<!-- Aliaksei (KJI0YH) Kryzhanouski part -->
@@ -268,7 +266,7 @@
 		
 		<section class = "Contact">
 			<div class = "ContactContent">
-				<h2>Contact Us<h2>
+				<h2>Contact Us</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<p>
 			</div>
 			<div class = "ContactContainer">
