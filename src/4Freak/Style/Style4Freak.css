@@ -272,6 +272,16 @@
 	color: #666;	
 }
 
+.ContactForm .ContactInputBox input:focus ~ span,
+.ContactForm .ContactInputBox input:valid ~ span,
+.ContactForm .ContactInputBox textarea:focus ~ span,
+.ContactForm .ContactInputBox textarea:valid ~ span
+{
+    color: #FFF;
+    mix-blend-mode: multiply;
+}
+
+
 .ContactForm .ContactInputBox input[type="submit"]
 {
 	position: absolute;
