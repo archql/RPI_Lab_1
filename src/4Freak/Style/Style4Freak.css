@@ -1,3 +1,103 @@
+/*Our Team Member*/
+.TeamMembers
+{	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 1170px;
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.TeamMembers .TeamMembersContent
+{
+	max-width: 500px;
+	text-align: center;
+}
+
+.TeamMembers .TeamMembersContent h2
+{
+	font-size: 29px;
+	font-weight: 500;
+}
+
+.TeamMemvers .TeamMembersContent p
+{
+	margin-top: 30px;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.TeamMembersContainer
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.TeamMembersContainer .TeamMemberInfo
+{
+	width: 100%;
+	display: flex;  
+	justify-content: center; 
+	align-items: center;
+	flex-direction: row;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox
+{
+	position: relative;
+	padding: 0 10px;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMemberName
+{
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMemberPost
+{
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMembersIcon
+{
+	min-width: 60px;
+	min-height: 60px;
+	max-width: 44px;
+	background: #F0F1F1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10%;
+	margin: 10px;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMembersIconContainer
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMembersIcon:hover
+{
+	color: #FFF;
+	background-color: #3949ab;
+}
+
 /*Contect Us*/
 .Contact
 {
@@ -82,7 +182,7 @@
 	min-height: 100px;
 	background: RGB(57, 73, 171);
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
@@ -171,6 +271,16 @@
 	transition: 0.5s;
 	color: #666;	
 }
+
+.ContactForm .ContactInputBox input:focus ~ span,
+.ContactForm .ContactInputBox input:valid ~ span,
+.ContactForm .ContactInputBox textarea:focus ~ span,
+.ContactForm .ContactInputBox textarea:valid ~ span
+{
+    color: #FFF;
+    mix-blend-mode: multiply;
+}
+
 
 .ContactForm .ContactInputBox input[type="submit"]
 {
