@@ -1,8 +1,16 @@
 /* Artem (archql) Drankevich part */
 
-.archql_top_menu_li {
-	display: inline;
-	float: right;
+/* General font fix */
+.aq_top_nav,
+.aq_greeting_container,
+.aq_greeting_container button,
+.aq_about_container > div,
+.aq_about_container > ul,
+.aq_table_container,
+.aq_table_button
+{
+	line-height: 22px;
+	letter-spacing: 0.05em;
 }
 .archql_top_menu_a {
 	display: block;
@@ -34,18 +42,31 @@
 	padding: 14px 16px;
 	text-decoration: none;
 
+	font-weight: 600;
 	font-size: 20px;
+
+	transition: color 0.2s;
+}
+.aq_top_li a:hover {
+	color: #00897b;
 }
 
 .aq_top_li:first-child{
 	float: left;
 }
-
-.aq_top_li:first-child a{
+.aq_top_logo span{
+	font-weight: bold;
 	font-size: 25px;
-	font-weight: 600;
+	line-height: 22px;
 }
 
+.aq_top_nav ul i {
+	display: flex;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	font-weight: 300;
+}
 /* Container needed to position the button. Adjust the width as needed */
 .aq_container {
 	/*width: 100%;
@@ -68,14 +89,19 @@
 	text-align: center;
 	
 	font-size: 60px;
-	font-weight: 700;
+	font-weight: 400;
+
+	margin-bottom: 50px;
+	margin-top: 100px;
 }
 .aq_container h2 {
 	color: white;
 	text-align: center;
 
 	font-size: 22px;
-	font-weight: 300;
+	font-weight: 400;
+
+	margin-bottom: 150px;
 }
 .aq_container nav {
 	align: center;
@@ -90,8 +116,16 @@
 	
 	font-size: 20px;
 	text-transform: uppercase;
+	font-weight: 700;
 
-	border: 5px white solid;
+	text-align: center;
+
+	border: 3px white solid;
+	margin: 0 12px;
+
+	padding: 15px;
+	min-width: 220px;
+	height: 70px;
 
 	margin: 10px;
 	padding: 20px;
@@ -113,7 +147,15 @@
 }
 .aq_about h2 {
 	text-align: center;
-
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 346px;
+	min-width: 630px;
+}
+.aq_about_container > div h2 {
+	font-weight: 700;
 	font-size: 30px;
 	font-weight: 600;
 }
@@ -144,6 +186,9 @@
 }
 .aq_icons_a h2 {
 	font-size: 20px;
+	font-weight: 600;
+	margin: 40px 0 20px 0;
+	text-transform: capitalize;
 }
 
 /* Table */
@@ -159,9 +204,21 @@
 	padding: 50px;
 }
 
-.aq_table button {
-	background-color: white;
-	padding: 5px;
+.aq_table_container th h3 {
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.aq_table_container th span {
+	letter-spacing: 0.05em;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: center;
+	margin: 0 50px 40px 50px;
+}
+.aq_table_button {
+	/*background-color: white;*/
 
 	text-transform: uppercase;
 	font-size: 20px;
