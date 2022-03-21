@@ -85,6 +85,16 @@
 	margin: 10px;
 }
 
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMembersIcon i
+{
+	color: #00897b;
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox a
+{
+	color: #F0F1F1
+}
+
 .TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMembersIconContainer
 {
 	display: flex;
@@ -92,13 +102,25 @@
 	justify-content: center;
 }
 
-.TeamMembersContainer .TeamMemberInfo .TeamMembersBox .TeamMembersIcon:hover
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox a:hover   div
 {
 	color: #FFF;
 	background-color: #3949ab;
 }
 
-/*Contect Us*/
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox a:hover i
+{
+	color: #FFF;
+	
+}
+
+.TeamMembersContainer .TeamMemberInfo .TeamMembersBox a:hover
+{
+	color: #3949ab;
+}
+
+
+/*Contact Us*/
 .Contact
 {
 	margin: 0;
@@ -279,6 +301,11 @@
     mix-blend-mode: multiply;
 }
 
+.ContactForm .ContactInputBox input[type="submit"]:hover
+{
+	color: #FFF;
+	background-color: #3949ab;
+}
 
 .ContactForm .ContactInputBox input[type="submit"]
 {
