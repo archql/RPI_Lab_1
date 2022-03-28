@@ -8,20 +8,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- Fontawesome -->
-		<script src="https://use.fontawesome.com/c001d46bfb.js"></script>
 		<link rel="stylesheet" href="Fontawesome/css/font-awesome.min.css">
 
 		<!-- Open Sans -->
-		<link href="style_font_open_sans.css" rel="stylesheet" type="text/css">
+		<link href = "style_font_open_sans.css" rel="stylesheet" type="text/css">
 		
 		<!-- 4Freak CSS -->
-		<link href = "src/4Freak/Style/Style4Freak.css" rel = "stylesheet" type = "text/css">	
+		<link href = "src/4Freak/Style/Style4Freak.css" rel = "stylesheet" type = "text/css">
 		
-		<!--Artem Drankevich (archql) CSS -->
-		<link href = "style_archql.css" 				rel="stylesheet" type="text/css"> 
+		<!-- Artem Drankevich (archql) CSS -->
+		<link href = "style_archql.css" 				rel="stylesheet" type="text/css">
 		
-		<!--Aliaksei  (KJI0YH) Kryzhanouski css -->
+		<!-- Aliaksei  (KJI0YH) Kryzhanouski css -->
 		<link href = "style_KJI0YH.css"                 rel="stylesheet" type="text/css">
+
+		<!-- Andrey (Veon2479) Shuliak css -->
+		<link href = "style_veon.css" 					rel="stylesheet" type="text/css">
+
+		<!-- Fontawesome -->
+		<link href = "css/all.min.css"                  rel="stylesheet" type="text/css">
+
 	</head>
 	<body>
 		<!-- Artem (archql) Drankevich part -->
@@ -34,13 +40,13 @@
 				<nav class="aq_top_nav">
 					<ul>
 						<li class="aq_top_li"><a href="#">Home</a></li>
-						<li class="aq_top_li"><a href="#">About</a></li>
-						<li class="aq_top_li"><a href="#">Servicing</a></li>
-						<li class="aq_top_li"><a href="#">Portfolio</a></li>
-						<li class="aq_top_li"><a href="#">Blog</a></li>
-						<li class="aq_top_li"><a href="#">Contact us</a></li>
+						<li class="aq_top_li"><a href="#aq_about_container">About</a></li>
+						<li class="aq_top_li"><a href="#aq_servicing">Servicing</a></li>
+						<li class="aq_top_li"><a href="#Portfolio-link">Portfolio</a></li>
+						<li class="aq_top_li"><a href="#blog-anchor">Blog</a></li>
+						<li class="aq_top_li"><a href="#ContactUs-anchor">Contact us</a></li>
 					</ul>
-					<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa-solid fa-search" aria-hidden="true"></i></a>
 				</nav>
 			</header>
 		</div>
@@ -54,7 +60,7 @@
 				<button>Our services</button>
 				<button>Hire is now</button>
 			</nav>
-			<a href="#aq_about_container"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+			<a href="#aq_about_container"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
 		</div>
 		
 		<!-- About uss -->
@@ -68,21 +74,21 @@
 			<!-- 3 icons in a row with text -->
 			<ul>
 				<li>
-					<img src="src/earth-globe.svg" alt="ERROR READ" width="50" height="50">
+					<img src="src/earth-globe.svg" alt="Earth Globe" width="50" height="50">
 					<h3>Awesome icons</h3>
 					<div>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 					</div>
 				</li>
 				<li>
-					<img src="src/transfer.svg" alt="ERROR READ" width="50" height="50">
+					<img src="src/transfer.svg" alt="Transfer" width="50" height="50">
 					<h3>One Page</h3>
 					<div>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 					</div>
 				</li>
 				<li>
-					<img src="src/head.svg" alt="ERROR READ" width="50" height="50">
+					<img src="src/head.svg" alt="Idea" width="50" height="50">
 					<h3>Fully Responsive</h3>
 					<div>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -92,7 +98,8 @@
 		</div>
 		
 		<!-- this strange table -->
-		<div class="aq_table_container">
+    
+	    <div class="aq_table_container" id="aq_servicing">
 			<div>
 				<table>
 					<caption>
@@ -169,8 +176,7 @@
 		<!-- Aliaksei (KJI0YH) Kryzhanouski part -->
 		
 		<!-- Latest Works part -->
-		<a name = "Portfolio-link"></a>
-		<section class="Portfolio">
+		<section class="Portfolio" id="Portfolio-link">
 		<div class="latest-works">
 			<h1>Latest Works</h1>
 			<div class="lw-text">
@@ -188,14 +194,14 @@
 			<!-- images part -->
 			<div class="lw-images" align="center">
 				<ul>
-					<a href = "#Portfolio-link"><li><span class="descr"><h4>Hand Watch</h4> ui/ux design</span><img src="src/KJI0YH/img1.png" alt="ERROR READ"></li></a>
-					<a href = "#Portfolio-link"><li><span class="descr"><h4>Hand Watch</h4> ui/ux design</span><img src="src/KJI0YH/img2.png" alt="ERROR READ"></li></a>
-					<a href = "#Portfolio-link"><li><span class="descr"><h4>Hand Watch</h4> ui/ux design</span><img src="src/KJI0YH/img3.png" alt="ERROR READ"></li></a>
+					<li><a href = "#Portfolio-link"><span class="descr"><h4>Hand Watch</h4> ui/ux design</span><img src="src/KJI0YH/img1.png" alt="ERROR READ"></a></li>
+					<li><a href = "#Portfolio-link"><span class="descr"><h4>Hand Watch</h4> ui/ux design</span><img src="src/KJI0YH/img2.png" alt="ERROR READ"></a></li>
+					<li><a href = "#Portfolio-link"><span class="descr"><h4>Hand Watch</h4> ui/ux design</span><img src="src/KJI0YH/img3.png" alt="ERROR READ"></a></li>
 				</ul>
 				<ul>
-					<a href = "#Portfolio-link"><li><span class="descr"><h4>Hand Watch</h4> ui/ux design</span><img src="src/KJI0YH/img4.png" alt="ERROR READ"></li></a>
-					<a href = "#Portfolio-link"><li><span class="descr"><h4>Hand Watch</h4> ui/ux design</span><img src="src/KJI0YH/img5.png" alt="ERROR READ"></li></a>
-					<a href = "#Portfolio-link"><li><span class="descr"><h4>Hand Watch</h4> ui/ux design</span><img src="src/KJI0YH/img6.png" alt="ERROR READ"></li></a>
+					<li><a href = "#Portfolio-link"><span class="descr"><h4>Hand Watch</h4> ui/ux design</span><img src="src/KJI0YH/img4.png" alt="ERROR READ"></a></li>
+					<li><a href = "#Portfolio-link"><span class="descr"><h4>Hand Watch</h4> ui/ux design</span><img src="src/KJI0YH/img5.png" alt="ERROR READ"></a></li>
+					<li><a href = "#Portfolio-link"><span class="descr"><h4>Hand Watch</h4> ui/ux design</span><img src="src/KJI0YH/img6.png" alt="ERROR READ"></a></li>
 				</ul>				
 			</div>
 
@@ -207,8 +213,7 @@
 		</section>
 		
 		<!-- Pricing plan part -->
-		<a name = "PricingPlan-link"></a>
-		<section class="PricingPlan">
+		<section class="PricingPlan" id = "PricingPlan-link">
 		<div class="pricing-plan">
 			<h1 align="center">Pricing plan</h1>
 			<div class="pp-text" align="center">
@@ -222,7 +227,7 @@
 								<span>Free Trail</span>
 							</div>
 							<div class="price-head">
-									<i class="fa fa-usd" aria-hidden="true"></i>
+									<i class="fa-solid fa-usd" aria-hidden="true"></i>
 									<span class="price-num">00</span>
 									<span class="price-month">per month</span>
 							</div>
@@ -245,7 +250,7 @@
 								<span>Basic</span>
 							</div>
 							<div class="price-head">
-									<i class="fa fa-usd" aria-hidden="true"></i>
+									<i class="fa-solid fa-usd" aria-hidden="true"></i>
 									<span class="price-num">50</span>
 									<span class="price-month">per month</span>
 							</div>
@@ -267,7 +272,7 @@
 								<span>Ultimates</span>
 							</div>
 							<div class="price-head">
-									<i class="fa fa-usd" aria-hidden="true"></i>
+									<i class="fa-solid fa-usd" aria-hidden="true"></i>
 									<span class="price-num">99</span>
 									<span class="price-month">per month</span>
 							</div>
@@ -292,9 +297,8 @@
 		<!-- Pasha (4Freak) Bobryk part -->
 		
 		<!-- Out Team Member -->
-		
-		<a name = "OurTeamMembers"></a>
-		<section class = "TeamMembers">
+
+		<section class = "TeamMembers" id = "OurTeamMembers-anchor">
 			<div Class = "TeamMembersContent">
 				<h2>Our Team Member</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -308,10 +312,10 @@
 							<p class = "TeamMemberName">John Doe<p>
 							<p class = "TeamMemberPost">General Manager<p>
 							<div class = "TeamMembersIconContainer">
-								<a href = "#OurTeamMembers"><div class = "TeamMembersIcon"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></div></a>
-								<a href = "#OurTeamMembers"><div class = "TeamMembersIcon"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></div></a>
-								<a href = "#OurTeamMembers"><div class = "TeamMembersIcon"><i class="fa fa-comments fa-2x" aria-hidden="true"></i></div></a>
-								<a href = "#OurTeamMembers"><div class = "TeamMembersIcon"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></div></a>
+								<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-facebook fa-2x" aria-hidden="true"></i></div></a>
+								<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></div></a>
+								<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-comments fa-2x" aria-hidden="true"></i></div></a>
+								<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-globe fa-2x" aria-hidden="true"></i></div></a>
 							</div>
 						</div>
 
@@ -321,10 +325,10 @@
 							<p class = "TeamMemberName">Alexa Biru<p>
 							<p class = "TeamMemberPost">Office Director<p>
 							<div class = "TeamMembersIconContainer">
-								<a href = "#OurTeamMembers"><div class = "TeamMembersIcon"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></div></a>
-								<a href = "#OurTeamMembers"><div class = "TeamMembersIcon"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></div></a>
-								<a href = "#OurTeamMembers"><div class = "TeamMembersIcon"><i class="fa fa-comments fa-2x" aria-hidden="true"></i></div></a>
-								<a href = "#OurTeamMembers"><div class = "TeamMembersIcon"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></div></a>
+								<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-facebook fa-2x" aria-hidden="true"></i></div></a>
+								<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></div></a>
+								<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-comments fa-2x" aria-hidden="true"></i></div></a>
+								<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-globe fa-2x" aria-hidden="true"></i></div></a>
 							</div>
 						</div>
 						
@@ -334,22 +338,123 @@
 							<p class = "TeamMemberName">Ronogir Sing<p>
 							<p class = "TeamMemberPost">Admin<p>
 							<div class = "TeamMembersIconContainer">
-								<a href = "#OurTeamMembers"><div class = "TeamMembersIcon"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></div></a>
-								<a href = "#OurTeamMembers"><div class = "TeamMembersIcon"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></div></a>
-								<a href = "#OurTeamMembers"><div class = "TeamMembersIcon"><i class="fa fa-comments fa-2x" aria-hidden="true"></i></div></a>
-								<a href = "#OurTeamMembers"><div class = "TeamMembersIcon"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></div></a>
+								<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-facebook fa-2x" aria-hidden="true"></i></div></a>
+								<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></div></a>
+								<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-comments fa-2x" aria-hidden="true"></i></div></a>
+								<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-globe fa-2x" aria-hidden="true"></i></div></a>
 							</div>
 						</div>
-
-						
 					</div>
+				</div>
+				<div class="team__slider-bullets">
+					<div class="slider-dot"></div>
+					<div class="slider-dot"></div>
+					<div class="slider-dot"></div>
 				</div>
 			</div>
 		</section>
 		
-		<!-- Contact us -->
+
+		<!-- Andrey (Veon2479) Shuliak part -->
+		<section class="blog" id="blog-anchor">
+            <div class="container">
+                <div class="title-container">
+                    <div class="title">
+                        Blog
+                    </div>
+                    <div class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </div>
+                </div>
+                <div class="blog-row">
+                    <div class="blog-row__image">
+                        <img src="src/blog1.png" alt="">
+                    </div>
+                    <div class="blog-row__description">
+                        <div class="blog__title">
+                            SEO Quis Vestibulum
+                        </div>
+                        <div class="blog__addtional-info">
+							<i class="fa-solid fa-calendar fa-type"></i>
+                            <div class="blog__date">
+                                14.07.2017
+                            </div>
+							<i class="fa-solid fa-file fa-type"></i>
+                            <div class="blog__category">
+                                Development
+                            </div>
+                        </div>
+                        <div class="blog__text">
+                            Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat...
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-row">
+                    <div class="blog-row__image order2">
+                        <img src="src/blog2.png" alt="">
+                    </div>
+                    <div class="blog-row__description order1">
+                        <div class="blog__title">
+                            SEO Quis Vestibulum
+                        </div>
+                        <div class="blog__addtional-info">
+							<i class="fa-solid fa-calendar fa-type"></i>
+
+                            <div class="blog__date">
+                                14.07.2017
+                            </div>
+							<i class="fa-solid fa-file fa-type"></i>
+
+                            <div class="blog__category">
+                                Development
+                            </div>
+                        </div>
+                        <div class="blog__text">
+                            Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat...
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-row">
+                    <div class="blog-row__image">
+                        <img src="src/blog3.png" alt="">
+                    </div>
+                    <div class="blog-row__description">
+                        <div class="blog__title">
+                            SEO Quis Vestibulum
+                        </div>
+                        <div class="blog__addtional-info">
+							<i class="fa-solid fa-calendar fa-type"></i>
+
+                            <div class="blog__date">
+                                14.07.2017
+                            </div>
+							<i class="fa-solid fa-file fa-type"></i>
+
+                            <div class="blog__category">
+                                Development
+                            </div>
+                        </div>
+                        <div class="blog__text">
+                            Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat...
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-submit">
+                    <div class="blog-submit__button">
+                        <span>
+                            View All
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
 		
-		<section class = "Contact">
+		<!-- Contact us -->
+		<section class = "Contact" id="ContactUs-anchor">
 			<div class = "ContactContent">
 				<h2>Contact Us</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -359,19 +464,19 @@
 				
 					<!-- Address -->
 					<div class = "ContactBox">
-						<div class = "ContactIcon MapMarkerIcon"><i class="fa fa-map-marker fa-3x" aria-hidden="true"></i></div>
+						<div class = "ContactIcon MapMarkerIcon"><i class="fa-solid fa-location-dot fa-3x" aria-hidden="true"></i></div>
 						<p>Nobinagar Savar, Dhaka <br>Bangladesh </p>
 					</div>
 					
 					<!-- Phone Number -->
 					<div class = "ContactBox">
-						<div class = "ContactIcon PhoneIcon"><i class="fa fa-phone fa-3x" aria-hidden="true"></i></div>
+						<div class = "ContactIcon PhoneIcon"><i class="fa-solid fa-phone fa-3x" aria-hidden="true"></i></div>
 						<p>+8801743331996<br>+8801928737807</p>
 					</div>
 
 					<!-- Email -->
 					<div class = "ContactBox">
-						<div class = "ContactIcon EnvelopeIcon"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></div>
+						<div class = "ContactIcon EnvelopeIcon"><i class="fa-solid fa-envelope fa-3x" aria-hidden="true"></i></div>
 						<p>quickmasud@gmail.com<br>quickmasud@yahoo.com</p>
 					</div>
 				</div>
@@ -416,9 +521,5 @@
                 </div>
             </div>
         </section>
-		
-		<!-- Andrey (Veon2479) Shuliak part -->
-		
-	
 	</body>
 </html>
