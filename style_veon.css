@@ -172,7 +172,7 @@
     margin-right: 20px;
     margin-bottom: 20px;
   }
-  
+  /*
   .blog__date:before {
     content: '';
     position: absolute;
@@ -184,13 +184,13 @@
     background: url(../img/icons/calendar.svg) 0 0 no-repeat;
     background-size: cover;
   }
-  
+  */
   .blog__category {
     font-size: 17px;
     position: relative;
     padding-left: 30px;
   }
-  
+  /*
   .blog__category:before {
     content: '';
     position: absolute;
@@ -202,7 +202,7 @@
     background: url(../img/icons/file.svg) 0 0 no-repeat;
     background-size: cover;
   }
-  
+  */
   .blog__text {
     font-size: 15px;
     padding-right: 120px;
