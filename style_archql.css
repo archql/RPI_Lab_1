@@ -78,8 +78,6 @@
 .aq_top_nav i {
 	width: 20px;
 	height: 20px;
-	font-size: 20px;
-	font-weight: 300;
 
 	color: black;
 }
@@ -90,7 +88,7 @@
 	height: 100%;*/
 	color: white;
 
-	background-image: url("src/topfone.png");
+	background-image: url("../src/topfone.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
