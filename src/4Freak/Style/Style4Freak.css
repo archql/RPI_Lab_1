@@ -250,7 +250,7 @@
 	margin-top: 10px;
 }
 
-.ContactForm .ContactInputBox input,
+.ContactForm .ContactInputBox input, button,
 .ContactForm .ContactInputBox textarea
 {
 	width: 100%;
@@ -302,13 +302,13 @@
     mix-blend-mode: multiply;
 }
 
-.ContactForm .ContactInputBox input[type="submit"]:hover
+.ContactForm .ContactInputBox button:hover
 {
 	color: #FFF;
 	background-color: #3949ab;
 }
 
-.ContactForm .ContactInputBox input[type="submit"]
+.ContactForm .ContactInputBox button
 {
 	position: absolute;
 	right: 0;
@@ -317,6 +317,39 @@
 	cursor: pointer;
 	padding: 10px;
 	font-size: 18px;
+}
+
+.ContactContentBlocker p
+{
+	text-align: center;
+	font-size: 50px;
+}
+
+.ContactContentBlocker_msg
+{
+	margin-top: 33%;
+    vertical-align: middle;
+}
+
+
+.ContactContentBlocker
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(92 92 129 / 50%);
+	opacity: 0;
+	visibility: hiden;
+	z-index: 0;
+}
+
+.ContactContentBlocker._active
+{
+	opacity: 1;
+	visibility: visible;
+	z-index: 4444;	
 }
 
 /*Footer*/
