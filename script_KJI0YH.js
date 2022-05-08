@@ -3,10 +3,10 @@ function createWindow() {
     winDiv.innerHTML = "<div id=\"orderModal\" class=\"modal\">\n" +
         "  <div class=\"modal-content\">\n" +
         "    <span class=\"close\">&times;</span>\n" +
-        "    <div><p>Registration</p></div>\n" +
-        "    <div class=\"namebox\"><span>Name</span><input type=\"text\"></div>\n" +
-        "    <div class=\"emailbox\"><span>Email</span><input type=\"text\"></div>\n" +
-        "    <div class=\"phonebox\"><span>Phone</span><input type=\"text\"></div>\n" +
+        "    <p>Registraion</p>\n"+
+        "    <div class=\"namebox\"><input type=\"text\" id=\"namebox\" value='' required='required'><span>Name</span></div>\n" +
+        "    <div class=\"emailbox\"><input type=\"text\" id=\"emailbox\" value='' required='required'><span>Email</span></div>\n" +
+        "    <div class=\"phonebox\"><input type=\"text\" id=\"phonebox\" value='' required='required'><span>Phone</span></div>\n" +
         "    <div><input id=\"modal-send\" class = \"submit\" type=\"submit\" value=\"send\"></div>\n" +
         "  </div>\n" +
         "</div>";
@@ -17,7 +17,7 @@ function createSuccess() {
     winSuc = document.createElement("div");
     winSuc.innerHTML = "<div id=\"orderSuc\" class=\"modal\">\n" +
         "  <div class=\"modal-content\">\n" +
-        "  <span>Текст об успешной отправке</span>\n" +
+        "  <span>Successfully sent</span>\n" +
         "  </div>\n" +
         "</div>";
     document.body.append(winSuc);
@@ -28,7 +28,7 @@ function createDone() {
     winDone = document.createElement("div");
     winDone.innerHTML = "<div id=\"orderDone\" class=\"modal\">\n" +
         "  <div class=\"modal-content\">\n" +
-        "  <span>Заказ осуществлен клоун</span>\n" +
+        "  <span>The order has already been made</span>\n" +
         "  </div>\n" +
         "</div>";
     document.body.append(winDone);
@@ -40,8 +40,10 @@ function closeWindow(modal){
 }
 
 function showWindow(win) {
-
-    if (win == modal && ordered) {
+    let ordered = sessionStorage.getItem('ordered');
+    console.log("ordered", ordered);
+    console.log(ordered === 'true');
+    if (win === modal && ordered === 'true') {
         showWindow(done);
         let timerID = setTimeout(closeWindow, 5000, done);
     }
@@ -49,13 +51,51 @@ function showWindow(win) {
         win.style.display = "block";
 }
 
+function validateName(name) {
+    var reg = /(\s*[а-яА-ЯёЁa-zA-Z])+$/;
+
+    if (reg.test(name) == false) {
+        alert('Enter correct name');
+        return false;
+    }
+    else
+        return true;
+}
+
+function validateEmail(email){
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+    if(reg.test(email) == false) {
+        alert('Enter correct e-mail');
+        return false;
+    }
+    else
+        return true;
+}
+
+function validatePhone(phone) {
+    var reg = /^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$/;
+
+    if(reg.test(phone) == false) {
+        alert('Enter correct phone');
+        return false;
+    }
+    else
+        return true;
+}
+
 function sendWindow(success) {
     //validation
+    let name = document.getElementById("namebox").value;
+    let email = document.getElementById("emailbox").value;
+    let phone = document.getElementById("phonebox").value;
 
-    closeWindow(modal);
-    showWindow(success);
-    ordered = true;
-    let timerID = setTimeout(closeWindow, 5000, success);
+    if (validateName(name) && validateEmail(email) && validatePhone(phone)) {
+        closeWindow(modal);
+        showWindow(success);
+        sessionStorage.setItem('ordered', true);
+        let timerID = setTimeout(closeWindow, 5000, success);
+    }
 }
 
 winDiv = createWindow();
@@ -65,7 +105,10 @@ winDone = createDone();
 var modal = document.getElementById("orderModal");
 var success = document.getElementById("orderSuc");
 var done = document.getElementById("orderDone");
-var ordered = false;
+
+if (!sessionStorage.getItem('ordered'))
+    sessionStorage.setItem('ordered', false);
+
 
 var btn = document.getElementsByClassName("btnOrder");
 for (let i = 0; i < btn.length; i++)
@@ -82,4 +125,8 @@ window.onclick = function(event) {
     if (event.target == modal) {
        closeWindow(modal);
     }
+}
+
+window.onclose = () => {
+    sessionStorage.clear();
 }
