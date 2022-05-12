@@ -1,4 +1,22 @@
-    let position = 0;
+    function writeCookie(name, val, expires) {
+        var date = new Date;
+        date.setDate(date.getDate() + expires);
+        document.cookie = name+"="+val+"; path=/; expires=" + date.toUTCString();
+    }
+
+    function readCookie(name) {
+        var matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    let position;
+    if (document.cookie.split(';').filter((item) => item.trim().startsWith('position=')).length) {
+        position = readCookie('position');
+    }
+    else position = 0;
+
     const slidesToShow = 1;
     const slidesToScroll = 1;
     const container = document.querySelector(`.slider-container`);
@@ -31,8 +49,12 @@
             position = - ( container.clientWidth * ( itemCount - 1 ) );
 
         track.style.transform = `translateX(${position}px)`;
-        curItem = ( - position ) / itemWidth
+        curItem = ( - position ) / itemWidth;
+        writeCookie('position', `${position}`, 30);
     };
+
+    setPosition();
+
 
     const setDots = () => {
 
