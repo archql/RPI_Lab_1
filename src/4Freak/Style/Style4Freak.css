@@ -250,7 +250,8 @@
 	margin-top: 10px;
 }
 
-.ContactForm .ContactInputBox input, button,
+.ContactForm .ContactInputBox input, 
+.ContactForm .ContactInputBox button,
 .ContactForm .ContactInputBox textarea
 {
 	width: 100%;
