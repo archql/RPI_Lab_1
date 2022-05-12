@@ -74,11 +74,13 @@ function create_window(index, parent)
 
 function show_window(index)
 {
+	document.body.style.overflow = "hidden";
     let window = document.getElementById("aq_modal_id_" + index.toString());
     window.style.display = "block";
 }
 function close_window(window)
 {
+	document.body.style.overflow = "";
     window.style.display = "none";
 }
 
