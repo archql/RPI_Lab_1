@@ -328,7 +328,7 @@
 
 .ContactContentBlocker_msg
 {
-	margin-top: 33%;
+	margin-top: 20%;
     vertical-align: middle;
 }
 
@@ -343,7 +343,7 @@
 	background-color: rgb(92 92 129 / 50%);
 	opacity: 0;
 	visibility: hiden;
-	z-index: 0;
+	z-index: -4444;
 }
 
 .ContactContentBlocker._active
