@@ -16,14 +16,15 @@
 
 
 		<!-- 4Freak CSS -->
-		<link href = "src/4Freak/Style/Style4Freak.css" rel = "stylesheet" type = "text/css">
-		
+		<!-- <link href = "src/4Freak/Style/Style4Freak.css" rel = "stylesheet" type = "text/css"> -->
+				
 		<!-- Artem Drankevich (archql) CSS -->
 		<link href = "style_archql.css" 				rel="stylesheet" type="text/css">
+		<link href = "style_modal_archql.css"			rel="stylesheet" type="text/css">
 		
 		<!-- Aliaksei  (KJI0YH) Kryzhanouski css -->
 		<link href = "style_KJI0YH.css"                 rel="stylesheet" type="text/css">
-		<link href="style_modal_KJI0YH.css"				rel="stylesheet" type="text/css">
+		<link href = "style_modal_KJI0YH.css"			rel="stylesheet" type="text/css">
 
 		<!-- Fontawesome -->
 		<link href = "css/all.min.css"                  rel="stylesheet" type="text/css">
@@ -554,6 +555,11 @@
 		
 		<!-- Contact us -->
 		<section class = "Contact" id="ContactUs-anchor">
+			<div class="ContactContentBlocker">
+				<div class="ContactContentBlocker_msg">
+					<p>Your message is sending</p>
+				</div>
+			</div>
 			<div class = "ContactContent">
 				<h2>Contact Us</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -582,29 +588,29 @@
 				
 				<!-- Input form -->
 				<div class = "ContactForm">
-					<form>
+					<form action = '#' id = 'ClassForm'>
 					
 						<!-- Edit Your Name -->
 						<div class = "ContactInputBox ContactInlineBox ContactNameBox">
-							<input type = "text" name = "" required = "required">
+							<input type = "text" name = "" required = "required" data-InputFormRule = "name">
 							<span>Your NAME</span>
 						</div>
 						
 						<!-- Edit Your Email -->
 						<div class = "ContactInputBox ContactInlineBox ContactEmailBox">
-							<input type = "text" name = "" required = "required">
+							<input type = "text" name = "" required = "required" data-InputFormRule = "email">
 							<span>Your Email</span>
 						</div>
 						
 						<!-- Edit Messages -->
 						<div class = "ContactInputBox ContactMessageBox">
-							<textarea required = "required"></textarea>
+							<textarea required = "required" data-InputFormRule = "message"></textarea>
 							<span>Write Message</span>
 						</div>
 						
 						<!-- Button Send -->
 						<div class = "ContactInputBox">
-							<input type="submit" name = "" value = "SEND">
+							<button class = "inputForm_BtnSubmit">SEND</button>
 						</div>
 					</form>
 				</div>
@@ -621,11 +627,17 @@
             </div>
         </section>
 
-	<!-- Aliaksei (KJI0YH) Kryzhanouski js -->
-	<script async src="script_KJI0YH.js"></script>
+    <!-- Andrey (Veon2479) Shuliak css -->
+	  <script src="slider/slider.js" ></script>
 
-	<script src="slider/slider.js" ></script>
+		<!-- Aliaksei (KJI0YH) Kryzhanouski js -->
+		<script async src="script_KJI0YH.js"></script>
 
+		<!-- Artem Drankevich (archql) js -->
+		<script async src="script_archql.js"></script>
+	
+		<!-- Pavel(4Freak) Bobryk JS -->
+		<script async src="src/4Freak/Script/script_4Freak.js"></script>
 
 	</body>
 </html>
