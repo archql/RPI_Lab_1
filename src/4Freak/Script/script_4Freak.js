@@ -1,6 +1,6 @@
-const inputForm_RegName = /^[A-Za-z-]{1,40}$/;
+const inputForm_RegName = /^[A-Za-zА-Яа-я-]{1,40}$/;
 const inputForm_RegEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-const inputForm_RegMessage = /^(\w|\s|\,|\.|\?){0,200}$/;
+const inputForm_RegMessage = /^(\w|\s|\,|\.|\?|[А-Яа-я]){0,200}$/;
 
 let inputForm_Inputs = document.querySelectorAll('input[data-InputFormRule]');
 let inputForm_Textareas = document.querySelectorAll('textarea[data-InputFormRule]');
@@ -67,8 +67,10 @@ function inputForm_SendMessage()
 {
 	function inputFrom_RemoveStyle(){
 		inputForm_ContactContentBlocker.classList.remove("_active");
+		document.body.style.overflow = "";
 	}
 	inputForm_ContactContentBlocker.classList.add("_active");
+	document.body.style.overflow = "hidden";
 	console.log("Send message");
 	window.setTimeout(inputFrom_RemoveStyle, 5000);
 }
