@@ -99,6 +99,7 @@ function createDone() {
 //close modal window
 function closeWindow(modal){
     modal.style.display = "none";
+    document.body.style.overflow = '';
 }
 
 //show modal window
@@ -110,6 +111,7 @@ function showWindow(win) {
     }
     else
         win.style.display = "block";
+    document.body.style.overflow = 'hidden';
 }
 
 //check entered name

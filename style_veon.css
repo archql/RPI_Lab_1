@@ -51,7 +51,7 @@
 
 }*/
 
-.subtitle, .title, .team__slider-bullets, .blog__title, .blog__addtional-info, .blog__text, .blog-submit span {
+.subtitle, .title, .slider-dot-holder, .blog__title, .blog__addtional-info, .blog__text, .blog-submit span {
     line-height: 22px;
     letter-spacing: 0.05em;
   }
@@ -113,7 +113,7 @@
 
 /* dots */
 
-.team__slider-bullets {
+.slider-dot-holder {
     padding-top: 125px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -124,18 +124,31 @@
     margin-bottom: 120px;
   }
 
-  .team__slider-bullets .slider-dot {
+
+/*
+   .slider-active-dot {
+      background-color: #FF0000;
+  }*/
+
+
+  .slider-dot-holder .slider-dot .slider-active-dot {
     width: 15px;
     height: 15px;
-    background-color: #00897b;
     border-radius: 50%;
   }
+
+
+ /* .slider-dot {
+        background-color: #00897b;
+  }*/
+
+
   
-  .team__slider-bullets .slider-dot:hover {
+  .slider-dot-holder .slider-dot:hover {
     background-color: #3949ab;
   }
   
-  .team__slider-bullets .slider-dot:not(:first-child) {
+  .slider-dot-holder .slider-active-dot .slider-dot:not(:first-child) {
     margin-left: 10px;
   }
 

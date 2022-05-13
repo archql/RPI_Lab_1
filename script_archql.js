@@ -76,10 +76,14 @@ function show_window(index)
 {
     let window = document.getElementById("aq_modal_id_" + index.toString());
     window.style.display = "block";
+	
+	document.body.style.overflow = 'hidden';
 }
 function close_window(window)
 {
     window.style.display = "none";
+	
+	document.body.style.overflow = '';
 }
 
 console.log("Init!!!");
